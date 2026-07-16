@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Clearance Certificate</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Poppins', sans-serif; 
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 0; 
+            box-sizing: border-box;
+        }
+
+        /* The Main Card Container */
+        .card {
+            background-color: #fff;            
+            width: 320px; 
+            padding: 50px 40px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.1); 
+            border-radius: 4px;
+            border-top: 1px solid #90EE90;
+            border-bottom: 1px solid #90EE90;
+        }
+
+        /* --- Top Section Styles --- */
+        .header-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            /* I removed the fixed height so it adjusts to your logo's shape */
+            /* I removed the gray background color so the logo sits on white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* NEW STYLE: Controls the image inside the wrapper */
+        .logo-placeholder img {
+            width: 100%;       /* Forces image to fit the 120px width of the wrapper */
+            height: auto;      /* Keeps the image from stretching */
+            display: block;
+        }
+
+        .info-bar {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0;
+            padding: 0px 0;
+            font-size: 16px; 
+            color: black;
+            font-weight: 600; 
+        }
+        
+        .info-bar.small {
+            padding: 5px 0;
+            font-size: 13px; 
+            font-weight: 400;
+            color: #555;
+        }
+
+        /* The horizontal divider line */
+        hr {
+            border: 0;
+            border-top: 1px solid #f2f2f2; 
+            margin: 20px 0;
+        }
+
+        /* --- Bottom Section Styles --- */
+        .details-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; 
+            text-align: left; 
+            margin-bottom: 20px;;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+        }
+
+        .label {
+            flex: 1; 
+            color: #333;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 400; /* Added bold back for labels so they stand out */
+        }
+
+        .value {
+            flex: 1; 
+            text-align: left; 
+            color: #555;
+            padding-left: 10px; 
+            font-weight: 400; 
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="header-section">
+            <div class="logo-placeholder">
+                <img style="width: 100px;" src="logo.png" alt="Company Logo">
+            </div>
+            <div class="info-bar">National Pension Commission</div>
+            <div style="margin-top: 0px;" class="info-bar small">Pension Clearance Certificate Verification</div>
+            <div class="info-bar small">Certificate Number: PCC000490988</div>
+        </div>
+
+        <hr>
+
+        <div class="details-section">
+            
+            <div class="detail-row">
+                <span class="label">Employer Code:</span>
+                <span class="value">PR1001326099</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">Company Name:</span>
+                <span class="value">SHARP DIGITAL SOLUTIONS TECHNOLOGIES LIMITED</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">RC No:</span>
+                <span class="value">929210</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">Date issued:</span>
+                <span class="value">3 FEB 2026</span>
+            </div>
+
+            <div class="detail-row">
+                <span class="label">Expiry Date:</span>
+                <span class="value">31 DECEMBER, 2025</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
